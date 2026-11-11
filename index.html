@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conoce las propuestas del Partido Verde en CDMX y participa en acciones para una ciudad más justa y sustentable."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Partido Verde CDMX | Participa por un futuro sustentable</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Partido Verde CDMX, inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><use href="./assets/icons/sprite.svg#leaf"></use></svg>
+        </span>
+        <span class="brand__name">PARTIDO VERDE <small>MÉXICO SUSTENTABLE</small></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-menu"
+        aria-label="Abrir menú de navegación"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-menu" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#propuestas">Ejes y Propuestas</a>
+        <a href="#participar">Programas Sociales</a>
+        <a href="#registro">Atención y Apoyo</a>
+        <a href="#contacto">Contacto</a>
+        <a class="site-nav__cta" href="#registro">Solicitar Apoyo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow">
+            <span class="eyebrow__line"></span>
+            Compromiso cívico
+          </p>
+          <div class="hero__seal" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><use href="./assets/icons/sprite.svg#leaf"></use></svg>
+            <span>VERDE</span>
+          </div>
+          <h1 id="hero-title">Por un Futuro Verde,<br />Justo y Sustentable</h1>
+          <p class="hero__description">
+            Transformamos compromisos ambientales y sociales en acciones reales para tu comunidad,
+            tu bienestar y el futuro de todas y todos en México.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#registro">
+              <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#person"></use></svg>
+              Solicitar Apoyo Ciudadano
+            </a>
+            <a class="button button--soft" href="#propuestas">
+              <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#leaf"></use></svg>
+              Conoce las Propuestas
+            </a>
+          </div>
+          <ul class="hero__proof" aria-label="Nuestros compromisos">
+            <li><span></span>100% Gratuito</li>
+            <li><span></span>Datos Protegidos</li>
+            <li><span></span>Apoyo Directo</li>
+          </ul>
+        </div>
+        <aside class="hero-feature" aria-label="Jornada ecológica y cobertura de programas">
+          <div class="hero-feature__image">
+            <img src="./assets/images/beneficios.svg" alt="Vecinas y vecinos colaborando en una jornada ambiental" />
+            <span class="hero-feature__badge">
+              <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#leaf"></use></svg>
+              Jornada Ecológica Activa
+            </span>
+          </div>
+          <div class="hero-feature__details">
+            <div class="hero-feature__stat">
+              <span>Cobertura</span>
+              <strong>Nacional</strong>
+              <small>32 Comités Estatales</small>
+            </div>
+            <div class="hero-feature__stat hero-feature__stat--neutral">
+              <span>Respuesta</span>
+              <strong>&lt; 72 Horas</strong>
+              <small>Enlace vecinal directo</small>
+            </div>
+          </div>
+          <a class="hero-feature__program" href="#propuestas">
+            <span class="hero-feature__program-icon"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#sun"></use></svg></span>
+            <span><strong>Plan Solar 2024</strong><small>Paneles para colonias populares</small></span>
+            <svg class="hero-feature__arrow" aria-hidden="true"><use href="./assets/icons/sprite.svg#arrow"></use></svg>
+          </a>
+        </aside>
+      </section>
+
+      <section class="proposals section-wrap" id="propuestas" aria-labelledby="proposals-title">
+        <div class="section-heading">
+          <p class="section-kicker"><span class="section-kicker__icon">✳</span> Acción comunitaria</p>
+          <h2 id="proposals-title">Ejes de Gobierno y Propuestas</h2>
+          <p>Nuestras iniciativas clave para consolidar ciudades saludables, inclusivas y en desarrollo social con justicia.</p>
+          <span class="platform-tag">Plataforma Legislativa 2024–2030</span>
+        </div>
+
+        <div class="proposal-grid">
+          <article class="proposal-card">
+            <div class="proposal-card__top">
+              <span class="proposal-card__icon"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#sun"></use></svg></span>
+              <span class="tag">Iniciativa Activa</span>
+            </div>
+            <h3>Transición Ecológica y Energías Limpias</h3>
+            <p>Paneles solares accesibles para hogares vulnerables, reforestación masiva metropolitana y protección estricta de áreas verdes y reservas protegidas.</p>
+            <a href="#registro">Meta: 35% de energía comunitaria limpia <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="proposal-card">
+            <div class="proposal-card__top">
+              <span class="proposal-card__icon"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#safeguard"></use></svg></span>
+              <span class="tag">Iniciativa Activa</span>
+            </div>
+            <h3>Salud y Bienestar Social</h3>
+            <p>Medicinas gratuitas con planes garantizados, clínicas móviles de atención preventiva y soporte alimentario y médico enfocado en adultos mayores.</p>
+            <a href="#registro">Abastecimiento médico prioritario <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="proposal-card">
+            <div class="proposal-card__top">
+              <span class="proposal-card__icon"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#water"></use></svg></span>
+              <span class="tag">Iniciativa Activa</span>
+            </div>
+            <h3>Agua y Protección Ambiental</h3>
+            <p>Modernización integral de tuberías para frenar fugas, captación masiva de lluvia en techos públicos y rescate ecológico de mantos freáticos y ríos.</p>
+            <a href="#registro">Sistemas hídricos sustentables <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="proposal-card">
+            <div class="proposal-card__top">
+              <span class="proposal-card__icon"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#growth"></use></svg></span>
+              <span class="tag">Iniciativa Activa</span>
+            </div>
+            <h3>Economía y Empleo Sustentable</h3>
+            <p>Incentivos fiscales para cooperativas de reciclaje, microcréditos para mujeres y jóvenes con proyectos de economía circular y huertos urbanos.</p>
+            <a href="#registro">Impulso a emprendedores verdes <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="participation" id="participar" aria-labelledby="participation-title">
+        <div class="section-wrap">
+          <div class="section-heading section-heading--center">
+            <p class="section-kicker">Gestión ciudadana</p>
+            <h2 id="participation-title">Pasos Simples para Acceder<br class="desktop-break" /> a Beneficios y Programas</h2>
+            <p>Un trámite transparente, sin intermediarios y con validación ágil para ti.</p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-card__image">
+                <img src="./assets/images/registro.svg" alt="Ciudadana llenando un formulario con apoyo de una asesora" />
+                <span class="step-card__number">1</span>
+              </div>
+              <div class="step-card__body">
+                <h3>Llenar el formulario</h3>
+                <p>Completa el formulario en línea con tus datos básicos de contacto, alcaldía y el tipo de apoyo social que necesitas.</p>
+              </div>
+            </article>
+
+            <article class="step-card">
+              <div class="step-card__image">
+                <img src="./assets/images/validacion.svg" alt="Equipo revisando una solicitud de apoyo ciudadano" />
+                <span class="step-card__number">2</span>
+              </div>
+              <div class="step-card__body">
+                <h3>Validamos tu información</h3>
+                <p>Nuestro enlace comunitario revisará y canalizará tu petición con la brigada correspondiente para asegurar atención rápida y fidedigna.</p>
+              </div>
+            </article>
+
+            <article class="step-card">
+              <div class="step-card__image">
+                <img src="./assets/images/beneficios.svg" alt="Voluntaria entregando plantas a una vecina" />
+                <span class="step-card__number">3</span>
+              </div>
+              <div class="step-card__body">
+                <h3>Acceso a tus beneficios</h3>
+                <p>Recibe la entrega de paquetes de apoyo, orientación legal o ingreso a jornadas ecológicas directamente en tu demarcación territorial.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="results section-wrap" aria-labelledby="results-title">
+        <div class="section-heading section-heading--center">
+          <p class="section-kicker">Resultados tangibles</p>
+          <h2 id="results-title">Somos más los que participamos</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><strong>+50K</strong><span>Ciudadanos Atendidos<small>A través de programas cívicos</small></span></div>
+          <div class="stat-card"><strong>32</strong><span>Estados Conectados<small>Red territorial en toda la república</small></span></div>
+          <div class="stat-card"><strong>+120</strong><span>Proyectos Aprobados<small>Leyes ambientales y sociales</small></span></div>
+          <div class="stat-card"><strong>100%</strong><span>Trámite Gratuito<small>Sin cuotas ni condicionamientos</small></span></div>
+        </div>
+      </section>
+
+      <section class="registration section-wrap" id="registro" aria-labelledby="registration-title">
+        <div class="registration__intro">
+          <span class="registration__icon"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#safeguard"></use></svg></span>
+          <span class="registration__kicker">Ventanilla cívica digital</span>
+          <h2 id="registration-title">Registro de Apoyo y Participación</h2>
+          <p>Completa este formulario oficial para canalizar tu solicitud de apoyo social, brigadas comunitarias o afiliación voluntaria.</p>
+          <ul class="registration__benefits">
+            <li><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#lock"></use></svg>Cifrado de datos y privacidad estricta</li>
+            <li><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#safeguard"></use></svg>Seguimiento en línea con folio único</li>
+            <li><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#person"></use></svg>Vinculación con brigadas de tu localidad</li>
+          </ul>
+        </div>
+
+        <form class="support-form">
+          <div class="form-grid">
+            <div class="form-field form-field--full">
+              <label for="full-name">Nombre(s) y Apellido(s)</label>
+              <input id="full-name" name="nombre" autocomplete="name" placeholder="Ingresa tu nombre completo" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="age">Edad</label>
+                <input id="age" name="edad" type="number" min="18" max="120" inputmode="numeric" placeholder="Ej. 34" />
+              </div>
+              <div class="form-field">
+                <label for="state">Estado / Entidad Federativa</label>
+                <select id="state" name="estado">
+                  <option value="" selected disabled>Selecciona tu estado</option>
+                  <option>Ciudad de México</option>
+                  <option>Estado de México</option>
+                  <option>Morelos</option>
+                  <option>Otro estado</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="municipality">Municipio o Alcaldía</label>
+                <input id="municipality" name="alcaldia" autocomplete="address-level2" placeholder="Ej. Cuauhtémoc, Zapopan..." />
+              </div>
+              <div class="form-field">
+                <label for="phone">Teléfono Celular o WhatsApp</label>
+                <input id="phone" name="telefono" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="10 dígitos para avisos" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Correo Electrónico</label>
+                <input id="email" name="correo" type="email" autocomplete="email" placeholder="tu.correo@ejemplo.com" />
+              </div>
+              <div class="form-field">
+                <label for="curp">CURP <span class="optional">(Opcional)</span></label>
+                <input id="curp" name="curp" autocomplete="off" placeholder="18 caracteres alfanuméricos" />
+              </div>
+            </div>
+
+            <div class="form-field form-field--full">
+              <label for="support-type">Tipo de Apoyo o Programa Solicitado</label>
+              <select id="support-type" name="tipo-apoyo">
+                <option value="" selected disabled>Selecciona el programa de tu interés</option>
+                <option>Salud y bienestar</option>
+                <option>Medio ambiente y jornadas ecológicas</option>
+                <option>Empleo y economía sustentable</option>
+                <option>Orientación ciudadana</option>
+                <option>Afiliación voluntaria</option>
+              </select>
+            </div>
+
+            <div class="form-field form-field--full">
+              <label for="details">Describe brevemente tu solicitud o necesidad</label>
+              <textarea id="details" name="detalles" rows="3" placeholder="Explica tu situación o la de tu comunidad para poder asistirte puntualmente..."></textarea>
+            </div>
+          </div>
+
+          <label class="consent form-consent">
+            <input type="checkbox" name="consentimiento" required />
+            <span>Acepto el <a href="#privacidad">Aviso de Privacidad</a> y autorizo el contacto exclusivo para dar seguimiento a esta solicitud cívica y administrativa.</span>
+          </label>
+
+          <div class="recaptcha-field">
+            <span class="recaptcha-field__label">Verificación de seguridad</span>
+            <div
+              class="recaptcha-widget"
+              id="recaptcha-widget"
+              data-sitekey="PENDIENTE"
+              aria-describedby="recaptcha-status recaptcha-legal"
+            ></div>
+            <p class="recaptcha-status" id="recaptcha-status" role="status" aria-live="polite">
+              reCAPTCHA está pendiente de configuración. Agrega la site key para activarlo.
+            </p>
+            <p class="recaptcha-legal" id="recaptcha-legal">
+              Protegido por reCAPTCHA. Aplican la
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad</a>
+              y los
+              <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Términos del Servicio</a>
+              de Google.
+            </p>
+          </div>
+
+          <button class="button button--primary form-submit" type="submit">
+            <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#send"></use></svg>
+            Enviar Solicitud de Apoyo
+          </button>
+          <p class="form-note">
+            <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#lock"></use></svg>
+            Tus datos están protegidos conforme a la Ley General de Protección de Datos Personales.
+          </p>
+          <p class="form-status" role="status" aria-live="polite" hidden>
+            El formulario aún no está conectado a un servicio de envío. Tus datos no fueron enviados.
+          </p>
+        </form>
+      </section>
+
+      <section class="contact" id="contacto" aria-labelledby="contact-title">
+        <div class="section-wrap contact__inner">
+          <div class="contact__heading">
+            <span class="contact__icon"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#phone"></use></svg></span>
+            <div>
+              <h2 id="contact-title">Canales de Atención Ciudadana</h2>
+              <p>Líneas abiertas y soporte directo de lunes a viernes de 09:00 a 18:00 hrs.</p>
+            </div>
+          </div>
+          <span class="contact__status">Atención inmediata</span>
+          <div class="contact__links">
+            <a href="https://wa.me/525541000500" class="contact-link">
+              <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#whatsapp"></use></svg>
+              <span><strong>WhatsApp Comunitario</strong><small>+52 55 4100 5000</small></span>
+              <span class="contact-link__arrow" aria-hidden="true">›</span>
+            </a>
+            <a href="mailto:atencion.ciudadana@pv.org.mx" class="contact-link">
+              <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#mail"></use></svg>
+              <span><strong>Correo Institucional</strong><small>atencion.ciudadana@pv.org.mx</small></span>
+              <span><small>Recepción y seguimiento formal</small></span>
+            </a>
+            <div class="contact-link contact-link--location">
+              <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#pin"></use></svg>
+              <span><strong>Módulos en los 32 Estados</strong><small>Comités Distritales</small><small>Ubica tu sede cívica más cercana</small></span>
+            </div>
+          </div>
+          <div class="social-links" aria-label="Redes sociales">
+            <a href="#contacto" aria-label="Facebook"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#facebook"></use></svg></a>
+            <a href="#contacto" aria-label="X"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#social"></use></svg></a>
+            <a href="#contacto" aria-label="Instagram"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#instagram"></use></svg></a>
+            <a href="#contacto" aria-label="YouTube"><svg aria-hidden="true"><use href="./assets/icons/sprite.svg#video"></use></svg></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="privacidad">
+      <div class="site-footer__main">
+        <div class="footer-brand">
+          <a class="footer-brand__name" href="#inicio">
+            <span class="footer__mark" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="./assets/icons/sprite.svg#leaf"></use></svg></span>
+            Partido Verde Ecologista
+          </a>
+          <p>Compromiso activo con el equilibrio ecológico, la justicia social y el bienestar de las familias mexicanas. Construyendo un México sustentable y con futuro.</p>
+          <strong>#PiensaVerde</strong>
+        </div>
+        <div class="footer-column">
+          <h2>Participación</h2>
+          <a href="#propuestas">Plataforma Electoral</a>
+          <a href="#participar">Programas Comunitarios</a>
+          <a href="#registro">Gestión de Apoyo</a>
+          <a href="#contacto">Módulos de Atención</a>
+        </div>
+        <div class="footer-column">
+          <h2>Transparencia</h2>
+          <a href="#privacidad">Directorio Nacional</a>
+          <a href="#privacidad">Aviso de Privacidad</a>
+          <a href="#privacidad">Rendición de Cuentas</a>
+          <a href="#privacidad">Sala de Prensa</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2024 Partido Verde Ecologista de México. Todos los derechos reservados.</p>
+        <p>Sede Nacional: Ciudad de México <strong>Cívico &amp; Sustentable</strong></p>
+      </div>
+    </footer>
+
+    <nav class="bottom-nav" aria-label="Navegación rápida">
+      <a class="bottom-nav__link bottom-nav__link--active" href="#inicio" aria-current="page">
+        <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#home"></use></svg><span>Inicio</span>
+      </a>
+      <a class="bottom-nav__link" href="#propuestas">
+        <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#lightbulb"></use></svg><span>Propuestas</span>
+      </a>
+      <a class="bottom-nav__link" href="#participar">
+        <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#building"></use></svg><span>Gobierno</span>
+      </a>
+      <a class="bottom-nav__link" href="#registro">
+        <svg aria-hidden="true"><use href="./assets/icons/sprite.svg#person"></use></svg><span>Registro</span>
+      </a>
+    </nav>
+  </body>
+</html>

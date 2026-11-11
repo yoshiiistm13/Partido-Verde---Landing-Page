@@ -1,0 +1,130 @@
+.results {
+  padding-block: 32px;
+}
+
+.results .section-heading h2 {
+  font-size: clamp(1.2rem, 4vw, 1.55rem);
+}
+
+.results .section-kicker {
+  font-size: 0.62rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.stat-card:nth-child(4) {
+  display: none;
+}
+
+.stat-card {
+  min-height: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e6eee2;
+  border-radius: 12px;
+  padding: 8px 5px;
+  background: #fff;
+  text-align: center;
+}
+
+.stat-card strong {
+  color: var(--color-green);
+  font-family: var(--font-display);
+  font-size: clamp(1.12rem, 5vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.1;
+}
+
+.stat-card span {
+  display: grid;
+  margin-top: 4px;
+  color: #50584d;
+  font-size: 0.63rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.stat-card small {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .results {
+    order: 1;
+    padding-block: 4px 27px;
+  }
+
+  .results .section-heading {
+    display: none;
+  }
+
+  .stats-grid {
+    max-width: none;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    margin: 0;
+    border-radius: 13px;
+    padding: 9px 5px;
+    background: #fff;
+  }
+
+  .stat-card:nth-child(4) {
+    display: flex;
+  }
+
+  .stat-card {
+    min-height: 68px;
+    border: 0;
+    border-radius: 0;
+    padding: 4px 8px;
+  }
+
+  .stat-card + .stat-card {
+    border-left: 1px solid #e8ebe6;
+  }
+
+  .stat-card strong {
+    font-size: clamp(1.45rem, 3vw, 2rem);
+  }
+
+  .stat-card span {
+    margin-top: 2px;
+    font-size: 0.66rem;
+  }
+
+  .stat-card small {
+    display: block;
+    margin-top: 2px;
+    color: var(--color-copy);
+    font-size: 0.57rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1024px) {
+  .results {
+    padding-bottom: 30px;
+  }
+
+  .stats-grid {
+    padding-inline: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .stat-card {
+    padding-inline: 4px;
+  }
+
+  .stat-card small {
+    font-size: 0.49rem;
+  }
+}

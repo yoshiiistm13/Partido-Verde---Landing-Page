@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <defs>
+    <linearGradient id="room" x2="0" y2="1"><stop stop-color="#b4d7b5"/><stop offset="1" stop-color="#e8e3d4"/></linearGradient>
+  </defs>
+  <rect width="800" height="440" fill="url(#room)"/>
+  <rect y="300" width="800" height="140" fill="#bd9b73"/>
+  <rect x="54" y="35" width="214" height="164" rx="8" fill="#eaf4e5"/>
+  <path d="M68 172h185M91 170V62m62 108V52m77 118V70" stroke="#91b883" stroke-width="8"/>
+  <rect x="228" y="219" width="370" height="26" rx="8" fill="#77573c"/>
+  <path d="M250 245h18v128h-18zm306 0h18v128h-18z" fill="#68472f"/>
+  <rect x="369" y="154" width="133" height="66" rx="5" fill="#fbfaf4"/>
+  <rect x="382" y="168" width="96" height="6" rx="3" fill="#d0e4c9"/>
+  <rect x="382" y="183" width="76" height="6" rx="3" fill="#e2e4df"/>
+  <rect x="382" y="198" width="57" height="9" rx="4" fill="#a8d19b"/>
+  <circle cx="324" cy="141" r="29" fill="#ca8e66"/>
+  <path d="M294 137c3-39 60-43 65-5l-8 23-9-20c-11 8-25 11-43 9l-5 18-3-25Z" fill="#473528"/>
+  <path d="M273 232c4-58 21-83 52-83 34 0 52 28 54 83l-12 64h-84l-10-64Z" fill="#34794a"/>
+  <path d="M365 193c24 6 38 16 53 33" stroke="#ca8e66" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="509" cy="129" r="29" fill="#e0ad7f"/>
+  <path d="M480 126c1-38 55-47 64-9l-6 23-11-18c-12 9-26 11-43 8l-3 19-1-23Z" fill="#5a4331"/>
+  <path d="M462 223c4-51 18-78 48-78 31 0 49 27 52 78l-8 73h-81l-11-73Z" fill="#d98f52"/>
+  <path d="M465 185c-25 8-40 18-55 38" stroke="#e0ad7f" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="641" cy="264" r="35" fill="#d7e7cd"/>
+  <path d="M641 246v36m-18-18h36m-31-13 26 26m0-26-26 26" stroke="#6b9b61" stroke-width="4" stroke-linecap="round"/>
+</svg>

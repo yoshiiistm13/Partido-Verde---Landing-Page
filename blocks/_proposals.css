@@ -1,0 +1,248 @@
+.proposals {
+  padding-block: 34px 32px;
+}
+
+.proposals .section-heading {
+  margin-bottom: 18px;
+}
+
+.proposal-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.proposal-card {
+  position: relative;
+  min-width: 0;
+  border-left: 4px solid var(--color-green);
+  border-radius: 0 12px 12px 0;
+  padding: 12px 13px 13px;
+  background: #f3f4f2;
+}
+
+.proposal-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+
+.proposal-card__icon {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #d4efcb;
+  color: var(--color-green-dark);
+}
+
+.proposal-card__icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+.tag {
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #d7edcf;
+  color: var(--color-green-dark);
+  font-size: 0.58rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.proposal-card h3 {
+  margin: 0 0 5px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.proposal-card p {
+  margin: 0 0 7px;
+  color: var(--color-copy);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.proposal-card > a {
+  color: var(--color-green-dark);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.proposal-card > a:hover {
+  text-decoration: underline;
+}
+
+.platform-tag {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .proposals {
+    padding-block: 64px;
+  }
+
+  .proposals .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .proposal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .proposal-card {
+    border-left-width: 5px;
+    border-radius: 0 15px 15px 0;
+    padding: 18px 20px;
+  }
+
+  .proposal-card h3 {
+    font-size: 1.08rem;
+  }
+
+  .proposal-card p {
+    font-size: 0.86rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .proposals {
+    order: 2;
+  }
+
+  .proposals .section-heading {
+    max-width: none;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    column-gap: 18px;
+    margin-bottom: 18px;
+  }
+
+  .proposals .section-heading .section-kicker,
+  .proposals .section-heading h2 {
+    grid-column: 1;
+  }
+
+  .proposals .section-heading .section-kicker {
+    margin-bottom: 4px;
+  }
+
+  .proposals .section-heading h2 {
+    margin-block: 0 4px;
+  }
+
+  .proposals .section-heading > p:not(.section-kicker) {
+    grid-column: 1;
+    max-width: 560px;
+    font-size: 0.78rem;
+  }
+
+  .platform-tag {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 6px 12px;
+    background: #d7edcf;
+    color: #30542b;
+    font-size: 0.63rem;
+    white-space: nowrap;
+  }
+
+  .proposal-grid {
+    gap: 12px;
+  }
+
+  .proposal-card {
+    min-height: 214px;
+    border: 0;
+    border-radius: 13px;
+    padding: 14px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(37, 72, 29, 0.035);
+  }
+
+  .proposal-card__top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px;
+    margin-bottom: 7px;
+  }
+
+  .proposal-card__icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .proposal-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .proposal-card p {
+    font-size: 0.7rem;
+    line-height: 1.45;
+  }
+
+  .proposal-card > a {
+    font-size: 0.61rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .proposals {
+    padding-block: 4px 35px;
+  }
+
+  .proposal-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .proposal-card {
+    min-height: 206px;
+    padding: 16px;
+  }
+
+  .proposal-card > a {
+    margin-top: auto;
+    padding-top: 8px;
+  }
+
+  .proposal-card h3 {
+    font-size: 0.94rem;
+  }
+
+  .proposal-card p {
+    font-size: 0.72rem;
+  }
+
+  .proposal-card > a {
+    font-size: 0.64rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .proposal-card {
+    min-height: 240px;
+    padding: 12px;
+  }
+
+  .proposal-card h3 {
+    font-size: 0.83rem;
+  }
+
+  .proposal-card p {
+    font-size: 0.66rem;
+  }
+}

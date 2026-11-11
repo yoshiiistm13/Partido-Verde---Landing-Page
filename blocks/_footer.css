@@ -1,0 +1,134 @@
+.site-footer {
+  padding: 19px 24px 16px;
+  background: #f1f2f1;
+  color: #73796f;
+}
+
+.footer__mark {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  border-radius: 50%;
+  background: #d9efce;
+  color: var(--color-green);
+}
+
+.footer__mark svg {
+  width: 16px;
+  height: 16px;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.59rem;
+  line-height: 1.45;
+}
+
+.site-footer__main {
+  display: grid;
+  gap: 20px;
+}
+
+.footer-brand__name {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-green-dark);
+  font-family: var(--font-display);
+  font-size: 0.83rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-brand__name .footer__mark {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-brand > p {
+  max-width: 360px;
+  margin-block: 9px;
+  color: #535b50;
+  font-size: 0.65rem;
+}
+
+.footer-brand > strong {
+  color: var(--color-green-dark);
+  font-size: 0.77rem;
+}
+
+.footer-column {
+  display: none;
+}
+
+.site-footer__bottom {
+  display: grid;
+  gap: 6px;
+  margin-top: 20px;
+  color: #535b50;
+  font-size: 0.56rem;
+}
+
+.site-footer__bottom > p:last-child {
+  display: flex;
+  gap: 12px;
+}
+
+.site-footer__bottom strong {
+  color: var(--color-green-dark);
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    padding: 24px max(32px, calc((100% - var(--content-width)) / 2)) 18px;
+  }
+
+  .site-footer__main {
+    grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(125px, 0.65fr));
+    gap: clamp(24px, 5vw, 76px);
+  }
+
+  .footer-brand > p {
+    font-size: 0.64rem;
+  }
+
+  .footer-column {
+    display: grid;
+    align-content: start;
+    gap: 6px;
+  }
+
+  .footer-column h2 {
+    margin: 0 0 2px;
+    color: #242a22;
+    font-size: 0.67rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .footer-column a {
+    color: #62685f;
+    font-size: 0.63rem;
+    text-decoration: none;
+  }
+
+  .footer-column a:hover {
+    color: var(--color-green-dark);
+    text-decoration: underline;
+  }
+
+  .site-footer__bottom {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-top: 28px;
+    font-size: 0.55rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .site-footer {
+    padding-inline: 24px;
+  }
+}
