@@ -160,34 +160,33 @@
 .recaptcha-field {
   display: grid;
   justify-items: start;
-  gap: 5px;
+  margin-block: 15px;
 }
 
-.recaptcha-field__label {
-  color: #30362e;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.recaptcha-widget {
-  min-height: 0;
+.netlify-recaptcha {
+  width: 304px;
+  min-height: 78px;
   max-width: 100%;
+  border: 1px solid #d5d9d2;
+  border-radius: 3px;
+  background: #fafafa;
 }
 
-.recaptcha-status,
-.recaptcha-legal {
-  margin: 0;
-  color: var(--color-copy);
-  font-size: 0.62rem;
+.netlify-recaptcha:empty::after {
+  min-height: 76px;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  color: #62685f;
+  content: "Netlify mostrará reCAPTCHA al publicar el sitio.";
+  font-size: 0.68rem;
   line-height: 1.4;
+  text-align: center;
 }
 
-.recaptcha-status {
-  color: #59491e;
-}
-
-.recaptcha-legal a {
-  color: var(--color-green-dark);
+.netlify-recaptcha:not(:empty) {
+  border: 0;
+  background: transparent;
 }
 
 .form-submit {
@@ -383,15 +382,6 @@
     font-size: 0.6rem;
   }
 
-  .recaptcha-field__label {
-    font-size: 0.62rem;
-  }
-
-  .recaptcha-status,
-  .recaptcha-legal {
-    font-size: 0.54rem;
-  }
-
   .form-submit {
     min-height: 38px;
     font-size: 0.68rem;
@@ -438,10 +428,6 @@
   }
 
   .form-field label {
-    font-size: 0.64rem;
-  }
-
-  .recaptcha-field__label {
     font-size: 0.64rem;
   }
 
